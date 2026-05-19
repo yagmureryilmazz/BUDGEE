@@ -277,18 +277,6 @@ Full interactive documentation: `http://localhost:8000/docs`
 
 ---
 
-## 🖼 Screenshots
-
-| Web Dashboard | Mobile Dashboard |
-|---|---|
-| Monthly income/expense summary with charts | Personalized greeting + quick stats |
-
-| Transactions | OCR Receipt Scanner |
-|---|---|
-| Multi-currency support (TRY/USD/EUR) | AI-powered receipt parsing |
-
----
-
 ## 👩‍💻 Developer
 
 **Yağmur Eryılmaz**
