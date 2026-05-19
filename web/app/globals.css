@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+/* ============================= */
+/* 🎨 THEME VARIABLES */
+/* ============================= */
+
+:root {
+  --background: #0b0f17;
+  --foreground: #f3f4f6;
+
+  --card: #111827;
+  --card-border: #1f2937;
+
+  --muted: #9ca3af;
+  --primary: #3b82f6;
+
+  --success: #22c55e;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+}
+
+/* Light mode (ileride kullanırsın) */
+.light {
+  --background: #f8fafc;
+  --foreground: #111827;
+
+  --card: #ffffff;
+  --card-border: #e5e7eb;
+
+  --muted: #6b7280;
+}
+
+/* ============================= */
+/* 🧱 RESET */
+/* ============================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* ============================= */
+/* 🌍 BASE BODY */
+/* ============================= */
+
+body {
+  min-height: 100vh;
+
+  background: radial-gradient(
+      circle at top left,
+      rgba(59, 130, 246, 0.08),
+      transparent 30%
+    ),
+    var(--background);
+
+  color: var(--foreground);
+
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ============================= */
+/* ✨ SCROLLBAR */
+/* ============================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* ============================= */
+/* 📝 TYPOGRAPHY */
+/* ============================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ============================= */
+/* 🧊 CARD GLOBAL */
+/* ============================= */
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ============================= */
+/* 🔘 BUTTON RESET */
+/* ============================= */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ============================= */
+/* 🔤 INPUTS */
+/* ============================= */
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+input::placeholder {
+  color: #6b7280;
+}
+
+/* ============================= */
+/* ✨ SMOOTH ANIMATION */
+/* ============================= */
+
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================= */
+/* 💀 SKELETON ANIMATION */
+/* ============================= */
+
+@keyframes pulse-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ============================= */
+/* ✨ UTILITIES */
+/* ============================= */
+
+.text-muted {
+  color: var(--muted);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-warning {
+  color: var(--warning);
+}

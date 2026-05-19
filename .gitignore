@@ -1,0 +1,78 @@
+# ========================
+# Python / Backend
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+.env
+*.env
+!*.env.example
+
+# ========================
+# Node / Web
+# ========================
+node_modules/
+.next/
+out/
+.cache/
+*.tsbuildinfo
+
+# ========================
+# Expo / Mobile
+# ========================
+.expo/
+android/
+ios/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+expo-env.d.ts
+
+# ========================
+# Environment files
+# ========================
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.local.example
+
+# ========================
+# IDE / OS
+# ========================
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+*.swp
+*.swo
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+npm-debug.log*
+
+# ========================
+# Alembic
+# ========================
+# Keep migrations but ignore pycache inside
+backend/alembic/versions/__pycache__/
+
+# ========================
+# Docker volumes
+# ========================
+db_data/
